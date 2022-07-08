@@ -8,6 +8,12 @@ public class GenerateMission : MonoBehaviour
     {
         public float x;
         public float y;
+        public string name;
+        public void getPlace()
+        {
+            float randomX = Random.Range(-1855f, 1255f);
+            float randomZ = Random.Range(-173f, 784f);
+        }
     };
     void Start()
     {
