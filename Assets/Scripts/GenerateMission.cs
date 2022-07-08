@@ -5,7 +5,10 @@ using UnityEngine;
 public class GenerateMission : MonoBehaviour
 {
     List<Vector3> places = new List<Vector3>(5);
-    Vector3[] placeVector = { new Vector3(0,0,0),
+    Vector3[] placeVector = { new Vector3(-1835.4f,0,341.6f),
+        new Vector3(-1767.3f,0,287.9f),
+        new Vector3(),
+        new Vector3()
     };
     class Place
     {
