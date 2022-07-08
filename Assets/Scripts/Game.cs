@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GenerateMission : MonoBehaviour
+public class Game : MonoBehaviour
 {
-    class Place
-    {
-        public float x;
-        public float y;
-    };
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -18,10 +14,5 @@ public class GenerateMission : MonoBehaviour
     void Update()
     {
         
-    }
-
-    void generateMissions()
-    {
-
     }
 }
