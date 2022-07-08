@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class GenerateMission : MonoBehaviour
 {
+    List<Vector3> places = new List<Vector3>(5);
+    Vector3[] placeVector = { new Vector3(0,0,0),
+    };
     class Place
     {
         public float x;
         public float y;
         public string name;
-        public void getPlace()
-        {
-            float randomX = Random.Range(-1855f, 1255f);
-            float randomZ = Random.Range(-173f, 784f);
-        }
+
     };
     void Start()
     {
