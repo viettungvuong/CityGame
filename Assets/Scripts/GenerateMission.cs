@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class GenerateMission : MonoBehaviour
 {
-    
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void generateMissions()
     {
-
+        if (Game.newMission)
+        {
+            Place.instance.createDestination().display(); //hien dia diem den moi
+        }
     }
 }

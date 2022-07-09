@@ -14,6 +14,10 @@ public class Place : MonoBehaviour
             this.x = x;
             this.z = z;
         }
+        public void display()
+        {
+
+        }
     }
     List<GameObject> sidewalks;
 
@@ -23,7 +27,7 @@ public class Place : MonoBehaviour
         GameObject[] temp = GameObject.FindGameObjectsWithTag("Sidewalk"); //tim tat ca cac le duong
         sidewalks = new List<GameObject>(temp);
     }
-    public Destination createDestinations()
+    public Destination createDestination()
     {
         int r = Random.Range(0, sidewalks.Count);
         GameObject go = sidewalks[r];
