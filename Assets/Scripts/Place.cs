@@ -8,23 +8,31 @@ public class Place : MonoBehaviour
     {
         public float x;
         public float z;
+        public Destination(float x, float z)
+        {
+            this.x = x;
+            this.z = z;
+        }
     }
     static List<GameObject> sidewalks;
-    public static List<Destination> destinations;
 
     private void Awake()
     {
         GameObject[] temp = GameObject.FindGameObjectsWithTag("Sidewalk"); //tim tat ca cac le duong
         sidewalks = new List<GameObject>(temp);
     }
-    void createDestinations()
+    public static Destination createDestinations()
     {
-        foreach(GameObject go in sidewalks)
-        {
-            float startX = go.transform.position.x;
-            float endX = go.transform.position.x + go.transform.lossyScale.x;
-            float startZ = go.transform.position.z;
-            float endZ = go.transform.position.z + go.transform.lossyScale.z; //lay diem dau va diem cuoi cua le duong
-        }
+        int r = Random.Range(0, sidewalks.Count);
+        GameObject go = sidewalks[r];
+        float startX = go.transform.position.x;
+        float endX = go.transform.position.x + go.transform.lossyScale.x;
+        float startZ = go.transform.position.z;
+        float endZ = go.transform.position.z + go.transform.lossyScale.z; //lay diem dau va diem cuoi cua le duong
+        float x = Random.Range(startX, endX);
+        float z = Random.Range(startZ, endZ);
+        Destination goTo = new Destination(x, z); //tao destination moi
+        return goTo;
+
     }
 }
