@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Place : MonoBehaviour
 {
+    public static Place instance;
     public class Destination
     {
         public float x;
@@ -14,14 +15,15 @@ public class Place : MonoBehaviour
             this.z = z;
         }
     }
-    static List<GameObject> sidewalks;
+    List<GameObject> sidewalks;
 
     private void Awake()
     {
+        instance = this;
         GameObject[] temp = GameObject.FindGameObjectsWithTag("Sidewalk"); //tim tat ca cac le duong
         sidewalks = new List<GameObject>(temp);
     }
-    public static Destination createDestinations()
+    public Destination createDestinations()
     {
         int r = Random.Range(0, sidewalks.Count);
         GameObject go = sidewalks[r];
