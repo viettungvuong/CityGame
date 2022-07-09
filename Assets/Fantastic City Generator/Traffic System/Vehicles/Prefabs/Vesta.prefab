@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227641310807754868}
   - component: {fileID: 1524923822843437576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BR - WheelCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.723395, y: 0.32116306, z: -1.4145199}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 9
@@ -71,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6822875696785335237}
   - component: {fileID: 5184424523191783824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FL - WheelCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,6 +89,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.7559769, y: 0.32116306, z: 1.4636074}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 8
@@ -132,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087915740683171245}
   - component: {fileID: 7167409969142445096}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FR - WheelCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +151,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.7559769, y: 0.32116306, z: 1.4636074}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 7
@@ -192,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2860437404465586169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RayC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,6 +212,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.7559769, y: 0.8, z: 2.1523411}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 5
@@ -222,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575870077071367849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RayC2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,6 +243,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7559769, y: 0.8, z: 2.1523411}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 6
@@ -254,7 +259,7 @@ GameObject:
   - component: {fileID: 8195496153803945360}
   - component: {fileID: 8195496153805239728}
   - component: {fileID: 8195496153806370672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,6 +276,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.7559769, y: 0.32116306, z: 1.4636074}
   m_LocalScale: {x: 0.97176564, y: 0.97176564, z: 0.97176564}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 4
@@ -294,10 +300,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -322,6 +330,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8195496153804433842
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +342,7 @@ GameObject:
   - component: {fileID: 8195496153803945362}
   - component: {fileID: 8195496153804336919}
   - component: {fileID: 958799412872178881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vesta
   m_TagString: IaCar
   m_Icon: {fileID: 0}
@@ -350,6 +359,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8195496153803945368}
   - {fileID: 8195496153803945370}
@@ -412,7 +422,7 @@ MonoBehaviour:
   myOldWayScript: {fileID: 0}
   player: {fileID: 0}
   tSystem: {fileID: 0}
-  distanceToDestroy: 0
+  distanceToSelfDestroy: 0
   carSetting:
     carSteer: {fileID: 0}
     springs: 25000
@@ -449,7 +459,7 @@ GameObject:
   - component: {fileID: 8195496153803945368}
   - component: {fileID: 8195496153805239736}
   - component: {fileID: 8195496153806370680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,6 +476,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.723395, y: 0.32116306, z: -1.4145176}
   m_LocalScale: {x: 0.97176564, y: 0.97176564, z: 0.97176564}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 0
@@ -489,10 +500,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -517,6 +530,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8195496153804433850
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +542,7 @@ GameObject:
   - component: {fileID: 8195496153803945370}
   - component: {fileID: 8195496153805239738}
   - component: {fileID: 8195496153806370682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,6 +559,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.723395, y: 0.32116306, z: -1.4145199}
   m_LocalScale: {x: 0.97176564, y: 0.97176564, z: 0.97176564}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 1
@@ -568,10 +583,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -596,6 +613,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8195496153804433852
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +626,7 @@ GameObject:
   - component: {fileID: 8195496153805239740}
   - component: {fileID: 8195496153806370684}
   - component: {fileID: 8195496153804336916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,6 +643,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 2
@@ -648,10 +667,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -676,6 +697,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &8195496153804336916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -700,7 +722,7 @@ GameObject:
   - component: {fileID: 8195496153803945374}
   - component: {fileID: 8195496153805239742}
   - component: {fileID: 8195496153806370686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,6 +739,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.7559769, y: 0.32116306, z: 1.4636074}
   m_LocalScale: {x: 0.97176564, y: 0.97176564, z: 0.97176564}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 3
@@ -740,10 +763,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -768,6 +793,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8396898719974049065
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8357852785691815878}
   - component: {fileID: 7120512930118688950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BL - WheelCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,6 +821,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.723395, y: 0.32116306, z: -1.4145176}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8195496153803945362}
   m_RootOrder: 10
