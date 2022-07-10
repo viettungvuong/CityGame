@@ -29,7 +29,7 @@ public class Game : MonoBehaviour
     {
         if (destination == null)
             return false;
-        if (Vector3.Distance(player.position, destination.position) < 100)
+        if (Vector3.Distance(player.position, destination.position) < 5)
             return true;
         return false;
     }
