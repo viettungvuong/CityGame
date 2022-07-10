@@ -13,7 +13,7 @@ public class Place : MonoBehaviour
     public MinimapRoutes route;
     List<GameObject> places;
     public GameObject player;
-    public MinimapText distanceShow;
+    public TMPro.TextMeshProUGUI distanceShow;
     private void Awake()
     {
         instance = this;
@@ -44,7 +44,7 @@ public class Place : MonoBehaviour
     private void Update()
     {
         if (Game.destination != null)
-            distanceShow.textToRender = ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
+            distanceShow.text = ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
                 .totalDistanceOfRouteSinceStartPointToDestination))
                 .ToString() + "m";
     }
