@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using MTAssets.EasyMinimapSystem;
 using UnityEngine;
 
 public class Game : MonoBehaviour
@@ -22,7 +23,11 @@ public class Game : MonoBehaviour
             Place.instance.getNewDestination(); //tim dia diem den moi
         }
         if (reached())
+        {
+            destination.GetComponent<MinimapItem>().enabled = false;
             start = true; //start cho moi
+        }
+
     }
 
     bool reached()

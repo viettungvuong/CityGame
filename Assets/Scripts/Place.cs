@@ -7,6 +7,8 @@ using MTAssets.EasyMinimapSystem;
 
 public class Place : MonoBehaviour
 {
+    public Sprite minimapIndicator;
+    public MinimapRenderer minimapRenderer;
     public static Place instance;
     public MinimapRoutes route;
     List<GameObject> places;
@@ -25,7 +27,16 @@ public class Place : MonoBehaviour
     public void getNewDestination()
     {
         route.startingPoint = player.transform; //lay vi tri hien tai lam diem xuat phat cua xe
-        Game.destination = route.destinationPoint = getRandom(); //chinh route diem den
+        Transform goTo = getRandom();
+
+        Game.destination = route.destinationPoint = goTo; //chinh route diem den
+        MinimapItem showMinimap = route.destinationPoint.gameObject.AddComponent(typeof(MinimapItem)) as MinimapItem;
+        showMinimap.itemSprite = minimapIndicator;
+        showMinimap.sizeOnMinimap = new Vector3(20, 0, 20);
+        showMinimap.spriteColor = Color.red;
+        showMinimap.sizeOnHighlight = 35; //de destination xuat hien tren minimap
+        showMinimap.enabled = true;
+        minimapRenderer.AddMinimapItemToBeHighlighted(showMinimap); //them vao renderer
         route.StartCalculatingAndShowRotesToDestination();
         Debug.Log(route.destinationPoint);
     }
