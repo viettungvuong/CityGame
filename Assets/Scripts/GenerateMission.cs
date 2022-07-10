@@ -20,7 +20,7 @@ public class GenerateMission : MonoBehaviour
     {
         if (Game.newMission)
         {
-            Place.instance.createDestination().display(); //hien dia diem den moi
+            Place.instance.getNewDestination(); //lay dia diem moi
         }
     }
 }

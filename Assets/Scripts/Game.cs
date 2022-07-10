@@ -5,6 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     public static bool newMission = false;
+    public static Transform destination;
     void Start()
     {
 
