@@ -13,6 +13,7 @@ public class Place : MonoBehaviour
     public MinimapRoutes route;
     List<GameObject> places;
     public GameObject player;
+    public MinimapText distanceShow;
     private void Awake()
     {
         instance = this;
@@ -39,5 +40,12 @@ public class Place : MonoBehaviour
         minimapRenderer.AddMinimapItemToBeHighlighted(showMinimap); //them vao renderer
         route.StartCalculatingAndShowRotesToDestination();
         Debug.Log(route.destinationPoint);
+    }
+    private void Update()
+    {
+        if (Game.destination != null)
+            distanceShow.textToRender = ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
+                .totalDistanceOfRouteSinceStartPointToDestination))
+                .ToString() + "m";
     }
 }

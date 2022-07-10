@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public Transform player;
     static bool start = true;
     public static Transform destination;
+
     void Start()
     {
 
