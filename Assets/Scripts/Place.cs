@@ -19,7 +19,11 @@ public class Place : MonoBehaviour
     }
     Transform getRandom()
     {
-        int c = Random.Range(0, places.Count);
+        int c;
+        do
+        {
+            c = Random.Range(0, places.Count);
+        } while (places[c].transform == Game.destination);
         return places[c].transform;
     }
     public void getNewDestination()
