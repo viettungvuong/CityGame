@@ -10,25 +10,23 @@ public class Place : MonoBehaviour
     public static Place instance;
     public MinimapRoutes route;
     List<GameObject> places;
-
+    public GameObject player;
     private void Awake()
     {
         instance = this;
-        GameObject[] temp = GameObject.FindGameObjectsWithTag("Building"); //tim tat ca cac building
+        GameObject[] temp = GameObject.FindGameObjectsWithTag("Destination"); //tim tat ca cac building co the den
         places = new List<GameObject>(temp);
     }
     Transform getRandom()
     {
-        int c;
-        do
-        {
-            c = Random.Range(0, places.Count);
-        } while (places[c].transform == Game.destination);
+        int c = Random.Range(0, places.Count);
         return places[c].transform;
     }
     public void getNewDestination()
     {
-        route.startingPoint = this.transform; //lay vi tri hien tai lam diem xuat phat cua xe
+        route.startingPoint = player.transform; //lay vi tri hien tai lam diem xuat phat cua xe
         Game.destination = route.destinationPoint = getRandom(); //chinh route diem den
+        route.StartCalculatingAndShowRotesToDestination();
+        Debug.Log(route.destinationPoint);
     }
 }
