@@ -37,19 +37,21 @@ public class Place : MonoBehaviour
         showMinimap.spriteColor = Color.red;
         showMinimap.sizeOnHighlight = 35; //de destination xuat hien tren minimap
         showMinimap.enabled = true;
-        float distance = route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
-        .totalDistanceOfRouteSinceStartPointToDestination; //tim khoang cach
-        setTime(distance);
         minimapRenderer.AddMinimapItemToBeHighlighted(showMinimap); //them vao renderer
         route.StartCalculatingAndShowRotesToDestination();
+        float distance = route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
+.totalDistanceOfRouteSinceStartPointToDestination; //tim khoang cach
+        setTime(distance);
     }
     private void Update()
     {
-        float distance = route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
-                .totalDistanceOfRouteSinceStartPointToDestination;
+
         if (Game.destination != null)
-            distanceShow.text = "Distance: " + ((int)Mathf.Round(distance))
+        {
+            distanceShow.text = "Distance: " + ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
+        .totalDistanceOfRouteSinceStartPointToDestination))
                 .ToString() + "m";
+        }
     }
     void setTime(float distance)
     {
@@ -73,5 +75,6 @@ public class Place : MonoBehaviour
         {
             Game.time = 120;
         }
+        Game.timerOn = true;
     }
 }

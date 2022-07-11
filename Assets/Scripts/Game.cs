@@ -9,7 +9,8 @@ public class Game : MonoBehaviour
     static bool start = true;
     public static Transform destination;
     public static float time = 0;
-
+    public static bool timerOn = false;
+    public TMPro.TextMeshProUGUI timerShow;
     void Start()
     {
 
@@ -29,6 +30,21 @@ public class Game : MonoBehaviour
             destination.GetComponent<MinimapItem>().enabled = false;
             start = true; //start cho moi
         }
+        if (timerOn)
+        {
+            if (time > 0)
+            {
+                time -= Time.deltaTime;
+                timerShow.text = "Time: " + ((int)Mathf.Round(time)).ToString() + "s";
+            }
+            else
+            {
+                Lose(); //thua
+                time = 0;
+                timerShow.text = "Time: 0s";
+                timerOn = false;
+            }
+        }
 
     }
 
@@ -39,5 +55,10 @@ public class Game : MonoBehaviour
         if (Vector3.Distance(player.position, destination.position) < 5)
             return true;
         return false;
+    }
+
+    public static void Lose()
+    {
+
     }
 }
