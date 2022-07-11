@@ -57,6 +57,11 @@ public class Game : MonoBehaviour
     private void UpdateHealth()
     {
         slider.value = health;
+        Image fillArea = slider.gameObject.transform.GetChild(1).transform.GetChild(0).gameObject.GetComponent<Image>();
+        if (health < 60)
+            fillArea.color = Color.yellow;
+        else if (health < 30)
+            fillArea.color = Color.red;
     }
     bool reached()
     {
