@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MTAssets.EasyMinimapSystem;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Game : MonoBehaviour
     public static float time = 0;
     public static bool timerOn = false;
     public TMPro.TextMeshProUGUI timerShow;
+    public static float health = 100; //suc khoe xe
+    public Slider slider;
     void Start()
     {
 
@@ -36,6 +39,9 @@ public class Game : MonoBehaviour
             {
                 time -= Time.deltaTime;
                 timerShow.text = "Time: " + ((int)Mathf.Round(time)).ToString() + "s";
+                UpdateHealth();
+                if (health <= 0)
+                    Lose();
             }
             else
             {
@@ -47,7 +53,10 @@ public class Game : MonoBehaviour
         }
 
     }
-
+    private void UpdateHealth()
+    {
+        slider.value = health;
+    }
     bool reached()
     {
         if (destination == null)
@@ -59,6 +68,6 @@ public class Game : MonoBehaviour
 
     public static void Lose()
     {
-
+        Time.timeScale = 0; //ngung game
     }
 }
