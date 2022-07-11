@@ -14,9 +14,10 @@ public class Game : MonoBehaviour
     public TMPro.TextMeshProUGUI timerShow;
     public static float health = 100; //suc khoe xe
     public Slider slider;
-    void Start()
+    public TrafficSystem ts;
+    void Awake()
     {
-
+        ts.LoadCars(0); //de tim cach random xe traffic
     }
 
     // Update is called once per frame
