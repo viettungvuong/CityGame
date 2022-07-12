@@ -15,9 +15,12 @@ public class Game : MonoBehaviour
     public static float health = 100; //suc khoe xe
     public Slider slider;
     public TrafficSystem ts;
+    public static GameObject pausePanel;
     void Awake()
     {
+        pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         ts.LoadCars(0); //de tim cach random xe traffic
+        pausePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -75,5 +78,11 @@ public class Game : MonoBehaviour
     public static void Lose()
     {
         Time.timeScale = 0; //ngung game
+    }
+
+    public static void Pause()
+    {
+        Time.timeScale = 0;
+        pausePanel.SetActive(true);
     }
 }
