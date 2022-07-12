@@ -21,4 +21,14 @@ public class pauseBtn : MonoBehaviour
     {
         Game.Pause();
     }
+
+    public void Continue()
+    {
+        Game.Continue();
+    }
+
+    public void backToMenu()
+    {
+        Game.Menu();
+    }
 }

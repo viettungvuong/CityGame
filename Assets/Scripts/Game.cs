@@ -85,4 +85,15 @@ public class Game : MonoBehaviour
         Time.timeScale = 0;
         pausePanel.SetActive(true);
     }
+
+    public static void Continue()
+    {
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
+    }
+
+    public static void Menu()
+    {
+        //quay ve menu
+    }
 }
