@@ -16,8 +16,10 @@ public class Game : MonoBehaviour
     public Slider slider;
     public TrafficSystem ts;
     public static GameObject pausePanel;
+    public static bool moved = false;
     List<Vector3> places;
-    void Awake()
+    Vector3 startingPoint;
+    void Start()
     {
         Vector3[] temp = {
             new Vector3(-1458.1f,0,237.5f),
@@ -49,22 +51,27 @@ public class Game : MonoBehaviour
         places = new List<Vector3>(temp);
         Vector3 chosen = places[Random.Range(0, places.Count)];
         Debug.Log(chosen);
-        player.position = chosen;
+        startingPoint = player.position = chosen;
         Debug.Log(player.position);
-        ts.LoadCars(0); //de tim cach random xe traffic
+        //ts.LoadCars(0); //de tim cach random xe traffic
         pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         pausePanel.SetActive(false);
     }
-
+    private void LateUpdate()
+    {
+        if (!moved)
+            player.position = startingPoint;
+    }
     // Update is called once per frame
     void Update()
     {
         if (start)
         {
+
             if (Place.instance.route != null)
                 Place.instance.route.StopCalculatingAndHideRotesToDestination();
-            start = false;
             Place.instance.getNewDestination(); //tim dia diem den moi
+            start = false;
         }
         if (reached())
         {
@@ -75,6 +82,7 @@ public class Game : MonoBehaviour
         {
             if (time > 0)
             {
+                Debug.Log(player.position);
                 time -= Time.deltaTime;
                 timerShow.text = "Time: " + ((int)Mathf.Round(time)).ToString() + "s";
                 UpdateHealth();

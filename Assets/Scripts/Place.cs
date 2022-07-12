@@ -27,6 +27,7 @@ public class Place : MonoBehaviour
     }
     public void getNewDestination()
     {
+        Debug.Log("Current " + player.transform.position);
         route.startingPoint = player.transform; //lay vi tri hien tai lam diem xuat phat cua xe
         Transform goTo = getRandom();
 
