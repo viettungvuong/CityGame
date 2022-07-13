@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MTAssets.EasyMinimapSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Game : MonoBehaviour
@@ -136,6 +137,6 @@ public class Game : MonoBehaviour
 
     public static void Menu()
     {
-        //quay ve menu
+        SceneManager.LoadScene("Menu");
     }
 }
