@@ -20,5 +20,6 @@ public class playBtn : MonoBehaviour
     public void playGame()
     {
         SceneManager.LoadScene("1");
+        gameObject.transform.parent.gameObject.SetActive(false);
     }
 }
