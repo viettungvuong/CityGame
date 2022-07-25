@@ -20,6 +20,10 @@ public class Game : MonoBehaviour
     public static bool moved = false;
     List<Vector3> places;
     Vector3 startingPoint;
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
     void Start()
     {
         Vector3[] temp = {
