@@ -49,9 +49,9 @@ public class Place : MonoBehaviour
 
         if (Game.destination != null)
         {
-            distanceShow.text = "Distance: " + ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
+            distanceShow.text = ((int)Mathf.Round(route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
         .totalDistanceOfRouteSinceStartPointToDestination))
-                .ToString() + "m";
+                .ToString();
         }
     }
     void setTime(float distance)

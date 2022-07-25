@@ -89,7 +89,7 @@ public class Game : MonoBehaviour
             {
                 Debug.Log(player.position);
                 time -= Time.deltaTime;
-                timerShow.text = "Time: " + ((int)Mathf.Round(time)).ToString() + "s";
+                timerShow.text = ((int)Mathf.Round(time)).ToString() + "s";
                 UpdateHealth();
                 if (health <= 0)
                     Lose();
@@ -98,7 +98,7 @@ public class Game : MonoBehaviour
             {
                 Lose(); //thua
                 time = 0;
-                timerShow.text = "Time: 0s";
+                timerShow.text = "0s";
                 timerOn = false;
             }
         }
