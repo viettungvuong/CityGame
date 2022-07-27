@@ -114,9 +114,9 @@ public class Game : MonoBehaviour
     {
         slider.value = health;
         Image fillArea = slider.gameObject.transform.GetChild(1).transform.GetChild(0).gameObject.GetComponent<Image>();
-        if (health < 60)
+        if (health < 80)
             fillArea.color = Color.yellow;
-        else if (health < 30)
+        else if (health < 50)
             fillArea.color = Color.red;
     }
     bool reached()
