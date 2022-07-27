@@ -123,7 +123,7 @@ public class Game : MonoBehaviour
     {
         if (destination == null)
             return false;
-        if (Vector3.Distance(player.position, destination.position) < 5)
+        if (Vector3.Distance(player.position, destination.position) < 15)
             return true;
         return false;
     }
