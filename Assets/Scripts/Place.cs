@@ -58,11 +58,11 @@ public class Place : MonoBehaviour
 
     void setTime(float distance)
     {
-        if (distance > 0 && distance < 400)
+        if (distance > 0 && distance < 700)
         {
             Game.time = 75;
         }
-        else if (distance >= 400 && distance < 1000)
+        else if (distance >= 700 && distance < 1000)
         {
             Game.time = 100;
         }

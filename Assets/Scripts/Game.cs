@@ -75,6 +75,13 @@ public class Game : MonoBehaviour
     //        player.position = startingPoint;
     //}
     // Update is called once per frame
+    IEnumerator reachedNotiShow()
+    {
+        reachedNoti.text = "Destination Reached"; //thong bao da den dia diem
+        reachedNums++;
+        yield return new WaitForSeconds(3.0f);
+        reachedNoti.text = "";
+    }
     void Update()
     {
         reachedNumsShow.text = reachedNums.ToString();
@@ -86,13 +93,13 @@ public class Game : MonoBehaviour
             Place.instance.getNewDestination(); //tim dia diem den moi
             start = false;
             //them cai doi may giay nua
-            reachedNoti.text = ""; //thong bao da den dia diem
+
         }
         if (reached())
         {
             destination.GetComponent<MinimapItem>().enabled = false;
-            reachedNoti.text = "Destination Reached"; //thong bao da den dia diem
-            reachedNums++;
+            StartCoroutine(reachedNotiShow()); //hien thong bao da den
+            reachedNoti.text = ""; //thong bao da den dia diem
             start = true; //start cho moi
         }
         if (timerOn)
