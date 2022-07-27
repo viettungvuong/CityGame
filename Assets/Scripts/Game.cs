@@ -16,13 +16,18 @@ public class Game : MonoBehaviour
     public static float health = 100; //suc khoe xe
     public Slider slider;
     public TrafficSystem ts;
+    public TMPro.TextMeshProUGUI reachedNoti;
+
     public static GameObject pausePanel;
     public static bool moved = false;
+
     List<Vector3> places;
     Vector3 startingPoint;
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
+        reachedNoti.text = "";
     }
     void Start()
     {
@@ -81,6 +86,7 @@ public class Game : MonoBehaviour
         if (reached())
         {
             destination.GetComponent<MinimapItem>().enabled = false;
+            reachedNoti.text = "Destination Reached"; //thong bao da den dia diem
             start = true; //start cho moi
         }
         if (timerOn)
