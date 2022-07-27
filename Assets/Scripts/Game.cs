@@ -74,7 +74,7 @@ public class Game : MonoBehaviour
         {
 
             if (Place.instance.route != null)
-                Place.instance.route.StopCalculatingAndHideRotesToDestination();
+                Place.instance.route.StopCalculatingAndHideRotesToDestination(); //luc nay la da xong, ngung tinh toan duong cu
             Place.instance.getNewDestination(); //tim dia diem den moi
             start = false;
         }
@@ -85,9 +85,9 @@ public class Game : MonoBehaviour
         }
         if (timerOn)
         {
-            if (time > 0)
+            if (time > 0) //timer
             {
-                Debug.Log(player.position);
+                //Debug.Log(player.position);
                 time -= Time.deltaTime;
                 timerShow.text = ((int)Mathf.Round(time)).ToString() + "s";
                 UpdateHealth();

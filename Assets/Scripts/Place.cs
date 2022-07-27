@@ -27,7 +27,7 @@ public class Place : MonoBehaviour
     }
     public void getNewDestination()
     {
-        Debug.Log("Current " + player.transform.position);
+        //Debug.Log("Current " + player.transform.position);
         route.startingPoint = player.transform; //lay vi tri hien tai lam diem xuat phat cua xe
         Transform goTo = getRandom();
 
@@ -44,6 +44,7 @@ public class Place : MonoBehaviour
 .totalDistanceOfRouteSinceStartPointToDestination; //tim khoang cach
         setTime(distance);
     }
+
     private void Update()
     {
 
@@ -54,6 +55,7 @@ public class Place : MonoBehaviour
                 .ToString();
         }
     }
+
     void setTime(float distance)
     {
         if (distance > 0 && distance < 400)
