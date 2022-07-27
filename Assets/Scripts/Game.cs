@@ -17,6 +17,8 @@ public class Game : MonoBehaviour
     public Slider slider;
     public TrafficSystem ts;
     public TMPro.TextMeshProUGUI reachedNoti;
+    public static int reachedNums = 0;
+    public TMPro.TextMeshProUGUI reachedNumsShow; //hien thi so diem da den
 
     public static GameObject pausePanel;
     public static bool moved = false;
@@ -75,6 +77,7 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        reachedNumsShow.text = reachedNums.ToString();
         if (start)
         {
 
@@ -82,11 +85,14 @@ public class Game : MonoBehaviour
                 Place.instance.route.StopCalculatingAndHideRotesToDestination(); //luc nay la da xong, ngung tinh toan duong cu
             Place.instance.getNewDestination(); //tim dia diem den moi
             start = false;
+            //them cai doi may giay nua
+            reachedNoti.text = ""; //thong bao da den dia diem
         }
         if (reached())
         {
             destination.GetComponent<MinimapItem>().enabled = false;
             reachedNoti.text = "Destination Reached"; //thong bao da den dia diem
+            reachedNums++;
             start = true; //start cho moi
         }
         if (timerOn)
