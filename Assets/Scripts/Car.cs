@@ -20,7 +20,7 @@ public class Car : MonoBehaviour
         GameObject touch = collision.gameObject; //lay vat xe vua moi dung
         Debug.Log(touch.name);
         string touchName = touch.name;
-        if (touchName != "Colliders-B" && !(touchName.Contains("Palm") || touchName.Contains("Road") || touchName.Contains("Grass") || touchName.Contains("Sidewalk"))) //tuc dung xe
+        if (touchName != "Colliders-B" && !touchName.Contains("Palm") && !touchName.Contains("Road") && !touchName.Contains("Grass") && !touchName.Contains("Sidewalk")) //tuc dung xe
         {
             Debug.Log("Dung xe");
             Game.health -= 15; //tru di suc khoe cua xe

@@ -60,15 +60,15 @@ public class Place : MonoBehaviour
     {
         if (distance > 0 && distance < 400)
         {
-            Game.time = 45;
+            Game.time = 75;
         }
         else if (distance >= 400 && distance < 1000)
         {
-            Game.time = 75;
+            Game.time = 100;
         }
         else if (distance >= 1000 && distance < 1500)
         {
-            Game.time = 115;
+            Game.time = 125;
         }
         else if (distance >= 1500 && distance < 2000)
         {
