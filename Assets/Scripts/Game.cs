@@ -20,6 +20,8 @@ public class Game : MonoBehaviour
     public static int reachedNums = 0;
     public TMPro.TextMeshProUGUI reachedNumsShow; //hien thi so diem da den
 
+    public static GameObject losePanel;
+
     public static GameObject pausePanel;
     public static bool moved = false;
 
@@ -30,6 +32,7 @@ public class Game : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         reachedNoti.text = "";
+
     }
     void Start()
     {
@@ -68,6 +71,8 @@ public class Game : MonoBehaviour
         ////ts.LoadCars(0); //de tim cach random xe traffic
         pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         pausePanel.SetActive(false);
+        losePanel = GameObject.FindGameObjectWithTag("losePanel");
+        losePanel.SetActive(false); //an menu luc thua
     }
     //private void LateUpdate()
     //{
@@ -143,6 +148,7 @@ public class Game : MonoBehaviour
 
     public static void Lose()
     {
+        losePanel.SetActive(true);
         Time.timeScale = 0; //ngung game
     }
 
