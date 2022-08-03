@@ -112,6 +112,8 @@ public class Game : MonoBehaviour
             StartCoroutine(reachedNotiShow()); //hien thong bao da den
             reachedNoti.text = ""; //thong bao da den dia diem
             start = true; //start cho moi
+            score += tempScore;
+            tempScore = 0;
         }
         if (timerOn)
         {
