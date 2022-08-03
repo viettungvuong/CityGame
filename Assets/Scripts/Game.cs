@@ -79,6 +79,7 @@ public class Game : MonoBehaviour
         pausePanel.SetActive(false);
         losePanel = GameObject.FindGameObjectWithTag("losePanel");
         losePanel.SetActive(false); //an menu luc thua
+        scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<TMPro.TextMeshProUGUI>();
     }
     //private void LateUpdate()
     //{
@@ -157,6 +158,7 @@ public class Game : MonoBehaviour
     public static void Lose()
     {
         losePanel.SetActive(true);
+        scoreText.text = score.ToString();
         Time.timeScale = 0; //ngung game
     }
 
