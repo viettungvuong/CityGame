@@ -24,6 +24,8 @@ public class Game : MonoBehaviour
 
     public static TMPro.TextMeshProUGUI scoreText;
 
+    public static TMPro.TextMeshProUGUI mileage;
+
     public static GameObject pausePanel;
     public static bool moved = false;
 
@@ -96,6 +98,7 @@ public class Game : MonoBehaviour
     }
     void Update()
     {
+        mileage.text = score.ToString();
         reachedNumsShow.text = reachedNums.ToString();
         if (start)
         {
