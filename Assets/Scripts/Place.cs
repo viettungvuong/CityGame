@@ -43,6 +43,7 @@ public class Place : MonoBehaviour
         float distance = route.GetCurrentGeneratedRouteIfIsCalculingAndShowingRoutes()
 .totalDistanceOfRouteSinceStartPointToDestination; //tim khoang cach
         setTime(distance);
+        Game.tempScore = (int)distance; //cach tinh diem la dua vao khoang cach, ta dua vao temp trc, di toi roi moi cong vao
     }
 
     private void Update()

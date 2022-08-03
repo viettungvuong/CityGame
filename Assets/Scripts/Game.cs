@@ -22,8 +22,14 @@ public class Game : MonoBehaviour
 
     public static GameObject losePanel;
 
+    public static TMPro.TextMeshProUGUI scoreText;
+
     public static GameObject pausePanel;
     public static bool moved = false;
+
+    public static int score = 0;
+
+    public static int tempScore = 0;
 
     List<Vector3> places;
     Vector3 startingPoint;
