@@ -38,6 +38,7 @@ public class Game : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         score = 0;
         tempScore = 0;
         moved = false;
