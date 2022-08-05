@@ -46,6 +46,7 @@ public class Game : MonoBehaviour
         start = true;
         Application.targetFrameRate = 60;
         reachedNoti.text = "";
+        AudioListener.volume = 1; //tat het moi am thanh
 
     }
     void Start()
@@ -169,6 +170,7 @@ public class Game : MonoBehaviour
     {
         losePanel.SetActive(true);
         scoreText.text = score.ToString();
+        AudioListener.volume = 0; //tat het moi am thanh
         Time.timeScale = 0; //ngung game
     }
 
