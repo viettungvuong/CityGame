@@ -24,7 +24,7 @@ public class Game : MonoBehaviour
 
     public static TMPro.TextMeshProUGUI scoreText;
 
-    public static TMPro.TextMeshProUGUI mileage;
+    public TMPro.TextMeshProUGUI mileage;
 
     public static GameObject pausePanel;
     public static bool moved = false;
