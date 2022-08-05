@@ -38,6 +38,11 @@ public class Game : MonoBehaviour
 
     private void Awake()
     {
+        score = 0;
+        tempScore = 0;
+        moved = false;
+        timerOn = false;
+        start = true;
         Application.targetFrameRate = 60;
         reachedNoti.text = "";
 

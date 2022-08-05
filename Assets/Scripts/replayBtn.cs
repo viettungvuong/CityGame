@@ -19,7 +19,6 @@ public class replayBtn : MonoBehaviour
 
     public void replay()
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene("1");
     }
 }
