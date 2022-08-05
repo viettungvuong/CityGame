@@ -163,6 +163,7 @@ public class PrometeoCarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given
         //in the inspector.
@@ -280,6 +281,8 @@ public class PrometeoCarController : MonoBehaviour
                 Debug.LogWarning(ex);
             }
         }
+
+        CarSounds();
 
     }
 
@@ -410,7 +413,24 @@ public class PrometeoCarController : MonoBehaviour
 
         // We call the method AnimateWheelMeshes() in order to match the wheel collider movements with the 3D meshes of the wheels.
         AnimateWheelMeshes();
+        //CarSounds();
+        playerCarSound();
+    }
 
+    void playerCarSound()
+    {
+        if (carEngineSound == null)
+            return;
+        if (carSpeed == 0)
+            carEngineSound.Stop();
+        else
+        {
+            if (!carEngineSound.isPlaying)
+            {
+                carEngineSound.Play();
+            }
+            carEngineSound.volume = carSpeed * 0.01f;
+        }
     }
 
     // This method converts the car speed data from float to string, and then set the text of the UI carSpeedText with this value.
@@ -572,6 +592,8 @@ public class PrometeoCarController : MonoBehaviour
     // This method apply positive torque to the wheels in order to go forward.
     public void GoForward()
     {
+        /*if (carEngineSound != null)
+            carEngineSound.Play();*/
         //If the forces aplied to the rigidbody in the 'x' asis are greater than
         //3f, it means that the car is losing traction, then the car will start emitting particle systems.
         if (Mathf.Abs(localVelocityX) > 2.5f)
