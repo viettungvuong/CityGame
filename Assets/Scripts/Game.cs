@@ -79,9 +79,10 @@ public class Game : MonoBehaviour
         ////ts.LoadCars(0); //de tim cach random xe traffic
         pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         pausePanel.SetActive(false);
+        scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<TMPro.TextMeshProUGUI>();
         losePanel = GameObject.FindGameObjectWithTag("losePanel");
         losePanel.SetActive(false); //an menu luc thua
-        scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<TMPro.TextMeshProUGUI>();
+
     }
     //private void LateUpdate()
     //{
