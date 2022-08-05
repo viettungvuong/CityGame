@@ -429,7 +429,7 @@ public class PrometeoCarController : MonoBehaviour
             {
                 carEngineSound.Play();
             }
-            carEngineSound.volume = carSpeed * 0.01f;
+            carEngineSound.volume = Mathf.Abs(carSpeed) * 0.01f;
         }
     }
 
