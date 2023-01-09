@@ -20,5 +20,7 @@ public class playBtn : MonoBehaviour
     public void playGame()
     {
         gameObject.transform.parent.gameObject.SetActive(false);
+        Game.timerOn = true;
+        Game.start = true;
     }
 }

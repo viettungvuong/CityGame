@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Game : MonoBehaviour
 {
     public Transform player;
-    static bool start = true;
+    public static bool start = false;
     public static Transform destination;
     public static float time = 0;
     public static bool timerOn = false;
@@ -44,7 +44,7 @@ public class Game : MonoBehaviour
         tempScore = 0;
         moved = false;
         timerOn = false;
-        start = true;
+        start = false; //ktra xem da bat game hay chua
         Application.targetFrameRate = 60;
         reachedNoti.text = "";
         AudioListener.volume = 1; //tat het moi am thanh
@@ -52,39 +52,7 @@ public class Game : MonoBehaviour
     }
     void Start()
     {
-        //Vector3[] temp = {
-        //    new Vector3(-1458.1f,0,237.5f),
-        //    new Vector3(-1457.98f,0,415.3f),
-        //    new Vector3(-1658.45f,0,430.23f),
-        //    new Vector3(-1248f,0,407.2f),
-        //    new Vector3(-1148.3f,0,407.2f),
-        //    new Vector3(-1138.1f,0,271.2f),
-        //    new Vector3(-1138.1f,0,375.9f),
-        //    new Vector3(-960.2f,0,375.9f),
-        //    new Vector3(-658.3f,0,375.9f),
-        //    new Vector3(-658.3f,0,276.2f),
-        //    new Vector3(-658.3f,0,57f),
-        //    new Vector3(-260.2f,0,57f),
-        //    new Vector3(-356.8f,0,57f),
-        //    new Vector3(-158,0,-133),
-        //    new Vector3(-158,0,166.2f),
-        //    new Vector3(39.18f,0,166.2f),
-        //    new Vector3(39.18f,0,353),
-        //    new Vector3(141.1f,0,772.4f),
-        //    new Vector3(544.47f,0,675.94f),
-        //    new Vector3(542.8f,0,343),
-        //    new Vector3(638.3f,0,81),
-        //    new Vector3(1135.5f,0,81),
-        //    new Vector3(1236,0,523.7f),
-        //    new Vector3(1137.65f,0,543.72f),
-        //    new Vector3(1036.5f,0,727.7f),
-        //};
-        //places = new List<Vector3>(temp);
-        //Vector3 chosen = places[Random.Range(0, places.Count)];
-        //Debug.Log(chosen);
-        //startingPoint = player.position = chosen;
-        //Debug.Log(player.position);
-        ////ts.LoadCars(0); //de tim cach random xe traffic
+        timerOn = false;
         pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         pausePanel.SetActive(false);
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<TMPro.TextMeshProUGUI>();
