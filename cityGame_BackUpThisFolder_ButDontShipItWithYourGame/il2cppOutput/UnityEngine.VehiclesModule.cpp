@@ -8,6 +8,7 @@
 
 
 #include <limits>
+#include <stdint.h>
 
 
 
@@ -35,6 +36,7 @@ IL2CPP_EXTERN_C_END
 struct U3CModuleU3E_t3E8E0BA57A4D4D0EF43301B668B802ED48E39035 
 {
 };
+struct Il2CppArrayBounds;
 
 // System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
@@ -56,11 +58,25 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
 // System.IntPtr
 struct IntPtr_t 
 {
 	// System.Void* System.IntPtr::m_value
 	void* ___m_value_0;
+};
+
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
 };
 
 // UnityEngine.JointSpring
@@ -87,6 +103,12 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___w_3;
 };
 
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
+};
+
 // System.Single
 struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
 {
@@ -103,6 +125,30 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2
 	float ___y_3;
 	// System.Single UnityEngine.Vector3::z
 	float ___z_4;
+};
+
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
+	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
+	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
+	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
+	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
+	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
+	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
+	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
+	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
+	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
 };
 
 // System.Void
@@ -137,6 +183,12 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	// System.IntPtr UnityEngine.Object::m_CachedPtr
 	intptr_t ___m_CachedPtr_0;
+};
+
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
 };
 // Native definition for P/Invoke marshalling of UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
@@ -208,111 +260,6 @@ struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t3
 struct WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481  : public Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76
 {
 };
-
-// <Module>
-
-// <Module>
-
-// System.ValueType
-
-// System.ValueType
-
-// System.Boolean
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-};
-
-// System.Boolean
-
-// System.IntPtr
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
-// System.IntPtr
-
-// UnityEngine.JointSpring
-
-// UnityEngine.JointSpring
-
-// UnityEngine.Quaternion
-struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
-{
-	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
-};
-
-// UnityEngine.Quaternion
-
-// System.Single
-
-// System.Single
-
-// UnityEngine.Vector3
-struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
-{
-	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
-	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
-	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
-	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
-	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
-	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
-	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
-	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
-	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
-	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
-};
-
-// UnityEngine.Vector3
-
-// System.Void
-
-// System.Void
-
-// UnityEngine.WheelFrictionCurve
-
-// UnityEngine.WheelFrictionCurve
-
-// UnityEngine.Object
-struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
-{
-	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
-	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
-};
-
-// UnityEngine.Object
-
-// UnityEngine.WheelHit
-
-// UnityEngine.WheelHit
-
-// UnityEngine.Component
-
-// UnityEngine.Component
-
-// UnityEngine.Collider
-
-// UnityEngine.Collider
-
-// UnityEngine.WheelCollider
-
-// UnityEngine.WheelCollider
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -326,13 +273,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelHit_get_forwardSlip_m1BA6AA2379368
 // System.Single UnityEngine.WheelHit::get_sidewaysSlip()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelHit_get_sidewaysSlip_m7E27E0B36C1CC096C56B8815B7C1E7D380D6627B (WheelHit_t15D44A463BF2792AD26161787B98CB5698519455* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WheelCollider::get_suspensionSpring_Injected(UnityEngine.JointSpring&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___0_ret, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WheelCollider::set_suspensionSpring_Injected(UnityEngine.JointSpring&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WheelCollider::get_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___0_ret, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___ret0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WheelCollider::set_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___value0, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -471,22 +418,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelCollider_get_radius_m68CC3DE301E0C
 	return icallRetVal;
 }
 // System.Void UnityEngine.WheelCollider::set_radius(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_radius_m43AA4113465733E26DD8B01774C9AD6C32424184 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_radius_m43AA4113465733E26DD8B01774C9AD6C32424184 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_radius_m43AA4113465733E26DD8B01774C9AD6C32424184_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_radius_m43AA4113465733E26DD8B01774C9AD6C32424184_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_radius_m43AA4113465733E26DD8B01774C9AD6C32424184_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_radius(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.WheelCollider::set_suspensionDistance(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionDistance_mED5D19A954DD3C7030B4D336466BF0EA1BB20348 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionDistance_mED5D19A954DD3C7030B4D336466BF0EA1BB20348 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_suspensionDistance_mED5D19A954DD3C7030B4D336466BF0EA1BB20348_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_suspensionDistance_mED5D19A954DD3C7030B4D336466BF0EA1BB20348_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_suspensionDistance_mED5D19A954DD3C7030B4D336466BF0EA1BB20348_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_suspensionDistance(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // UnityEngine.JointSpring UnityEngine.WheelCollider::get_suspensionSpring()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5 WheelCollider_get_suspensionSpring_m046582E587BF5AC228C2022D25A822BC4B4B9543 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, const RuntimeMethod* method) 
@@ -500,21 +447,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JointSpring_t5223C53C8742463D5615BE8E9772EC0E
 	}
 }
 // System.Void UnityEngine.WheelCollider::set_suspensionSpring(UnityEngine.JointSpring)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_m2E4ACAB8BE03081A58E217DAE84819CFA51A82B7 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5 ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_m2E4ACAB8BE03081A58E217DAE84819CFA51A82B7 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5 ___value0, const RuntimeMethod* method) 
 {
 	{
-		WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F(__this, (&___0_value), NULL);
+		WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F(__this, (&___value0), NULL);
 		return;
 	}
 }
 // System.Void UnityEngine.WheelCollider::set_mass(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_mass_mD6C319FDA15773358ACC232179C404D16938468E (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_mass_mD6C319FDA15773358ACC232179C404D16938468E (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_mass_mD6C319FDA15773358ACC232179C404D16938468E_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_mass_mD6C319FDA15773358ACC232179C404D16938468E_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_mass_mD6C319FDA15773358ACC232179C404D16938468E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_mass(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // UnityEngine.WheelFrictionCurve UnityEngine.WheelCollider::get_sidewaysFriction()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810 WheelCollider_get_sidewaysFriction_m7924ABBBB268B7F1FD8630733B6375CAFC2621E8 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, const RuntimeMethod* method) 
@@ -528,30 +475,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WheelFrictionCurve_tB7103DCB44101BD02986974ED
 	}
 }
 // System.Void UnityEngine.WheelCollider::set_sidewaysFriction(UnityEngine.WheelFrictionCurve)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_mB2062696F29B4275C7F5B2874FD333ECD2325DA8 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810 ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_mB2062696F29B4275C7F5B2874FD333ECD2325DA8 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810 ___value0, const RuntimeMethod* method) 
 {
 	{
-		WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9(__this, (&___0_value), NULL);
+		WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9(__this, (&___value0), NULL);
 		return;
 	}
 }
 // System.Void UnityEngine.WheelCollider::set_motorTorque(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_motorTorque_m4958AAF7D867CF7570420F9BAFAF04DC904F02A8_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_motorTorque(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.WheelCollider::set_brakeTorque(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_brakeTorque_mB9B216C57C275470907C7DB35185E2F192DC8DAB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_brakeTorque(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Single UnityEngine.WheelCollider::get_steerAngle()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelCollider_get_steerAngle_mF0A004554F1509F1DA233AC71A7A2C9C36CC9EE5 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, const RuntimeMethod* method) 
@@ -564,13 +511,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelCollider_get_steerAngle_mF0A004554
 	return icallRetVal;
 }
 // System.Void UnityEngine.WheelCollider::set_steerAngle(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, float ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, float);
 	static WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_steerAngle_m7BF83B27D8956355F873537939BE9F35CF3113C3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_steerAngle(System.Single)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Single UnityEngine.WheelCollider::get_rpm()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelCollider_get_rpm_m7AFAA813ED3965AE4B2A2E7CBC6FB2B26B68ED52 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, const RuntimeMethod* method) 
@@ -583,59 +530,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float WheelCollider_get_rpm_m7AFAA813ED3965AE
 	return icallRetVal;
 }
 // System.Void UnityEngine.WheelCollider::GetWorldPose(UnityEngine.Vector3&,UnityEngine.Quaternion&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_GetWorldPose_m8C41FA2AE9ED543AB94A6E3226523A2FE83FA890 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_pos, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___1_quat, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_GetWorldPose_m8C41FA2AE9ED543AB94A6E3226523A2FE83FA890 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___pos0, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___quat1, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_GetWorldPose_m8C41FA2AE9ED543AB94A6E3226523A2FE83FA890_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974*);
 	static WheelCollider_GetWorldPose_m8C41FA2AE9ED543AB94A6E3226523A2FE83FA890_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_GetWorldPose_m8C41FA2AE9ED543AB94A6E3226523A2FE83FA890_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::GetWorldPose(UnityEngine.Vector3&,UnityEngine.Quaternion&)");
-	_il2cpp_icall_func(__this, ___0_pos, ___1_quat);
+	_il2cpp_icall_func(__this, ___pos0, ___quat1);
 }
 // System.Boolean UnityEngine.WheelCollider::GetGroundHit(UnityEngine.WheelHit&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WheelCollider_GetGroundHit_mCB73878577BC5AAEBEA8572FA62326C4C71B3EF2 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelHit_t15D44A463BF2792AD26161787B98CB5698519455* ___0_hit, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WheelCollider_GetGroundHit_mCB73878577BC5AAEBEA8572FA62326C4C71B3EF2 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelHit_t15D44A463BF2792AD26161787B98CB5698519455* ___hit0, const RuntimeMethod* method) 
 {
 	typedef bool (*WheelCollider_GetGroundHit_mCB73878577BC5AAEBEA8572FA62326C4C71B3EF2_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, WheelHit_t15D44A463BF2792AD26161787B98CB5698519455*);
 	static WheelCollider_GetGroundHit_mCB73878577BC5AAEBEA8572FA62326C4C71B3EF2_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_GetGroundHit_mCB73878577BC5AAEBEA8572FA62326C4C71B3EF2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::GetGroundHit(UnityEngine.WheelHit&)");
-	bool icallRetVal = _il2cpp_icall_func(__this, ___0_hit);
+	bool icallRetVal = _il2cpp_icall_func(__this, ___hit0);
 	return icallRetVal;
 }
 // System.Void UnityEngine.WheelCollider::get_suspensionSpring_Injected(UnityEngine.JointSpring&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___0_ret, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___ret0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5*);
 	static WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_get_suspensionSpring_Injected_mDFEF80392DFDA3DDCD0B19BFE18F34D229AE22FB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::get_suspensionSpring_Injected(UnityEngine.JointSpring&)");
-	_il2cpp_icall_func(__this, ___0_ret);
+	_il2cpp_icall_func(__this, ___ret0);
 }
 // System.Void UnityEngine.WheelCollider::set_suspensionSpring_Injected(UnityEngine.JointSpring&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5* ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, JointSpring_t5223C53C8742463D5615BE8E9772EC0EE2EBBBD5*);
 	static WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_suspensionSpring_Injected_m5A1DA63E7226CBB700642005FC0C23C40406482F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_suspensionSpring_Injected(UnityEngine.JointSpring&)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.WheelCollider::get_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___0_ret, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___ret0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810*);
 	static WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_get_sidewaysFriction_Injected_m18A6CB2191D1CE62B131E11BFB5308F8A9C6FCD1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::get_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)");
-	_il2cpp_icall_func(__this, ___0_ret);
+	_il2cpp_icall_func(__this, ___ret0);
 }
 // System.Void UnityEngine.WheelCollider::set_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___0_value, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9 (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481* __this, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810* ___value0, const RuntimeMethod* method) 
 {
 	typedef void (*WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9_ftn) (WheelCollider_t4E35407C7AFEFA3DB30E9FFE3C38C9A5C5933481*, WheelFrictionCurve_tB7103DCB44101BD02986974ED9D4EE6B880E8810*);
 	static WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WheelCollider_set_sidewaysFriction_Injected_mFE019F748A809846714267E3AA9DB8C49616A1A9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WheelCollider::set_sidewaysFriction_Injected(UnityEngine.WheelFrictionCurve&)");
-	_il2cpp_icall_func(__this, ___0_value);
+	_il2cpp_icall_func(__this, ___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
