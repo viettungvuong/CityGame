@@ -26,12 +26,16 @@ public class Game : MonoBehaviour
 
     public TMPro.TextMeshProUGUI mileage;
 
+    public GameObject reachedPanel;
+
     public static GameObject pausePanel;
     public static bool moved = false;
 
     public static int score = 0;
 
     public static int tempScore = 0;
+
+    public AudioClip audio;
 
     List<Vector3> places;
     Vector3 startingPoint;
@@ -68,10 +72,12 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     IEnumerator reachedNotiShow()
     {
+        reachedPanel.SetActive(true);
         reachedNoti.text = "Destination Reached"; //thong bao da den dia diem
         reachedNums++;
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(5.0f);
         reachedNoti.text = "";
+        reachedPanel.SetActive(false);
     }
     void Update()
     {
@@ -90,6 +96,8 @@ public class Game : MonoBehaviour
         if (reached())
         {
             destination.GetComponent<MinimapItem>().enabled = false;
+            AudioSource audiosrc = GetComponent<AudioSource>();
+            audiosrc.PlayOneShot(audio);
             StartCoroutine(reachedNotiShow()); //hien thong bao da den
             reachedNoti.text = ""; //thong bao da den dia diem
             start = true; //start cho moi
