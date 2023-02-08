@@ -56,6 +56,7 @@ public class Game : MonoBehaviour
     }
     void Start()
     {
+        reachedPanel.SetActive(false);
         timerOn = false;
         pausePanel = GameObject.FindGameObjectWithTag("pausePanel");
         pausePanel.SetActive(false);
